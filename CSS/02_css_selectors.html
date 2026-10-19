@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors in css</title>
+    <style>
+
+        /* tag selector */
+        p{
+            background-color: rgb(249, 159, 229);
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* class selector  */
+        /* btn is a specific class inside button element */
+        .btn{
+            background-color: black;
+            color: aliceblue;
+            border-radius: 15%;
+        }
+
+        /* id selector  */
+       #btn1{
+        background-color: rgb(76, 76, 223);
+        color: white;
+        border-radius: 50%;
+       }
+
+       /* child selector */
+       div > p {
+        background-color: aqua;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+       }
+
+       /* descendant selector */
+       div h3{
+        background-color: rgb(240, 1, 228);
+       }
+
+       /* universal selector */
+       *{
+        margin: 10;
+        padding: 10;
+       }
+
+       /*  pseudo selectors  */
+        
+        a:hover{
+            color: rgb(0, 0, 0);
+            background-color: rgb(49, 58, 182);
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: rgb(0, 0, 0);
+        }
+
+        a:active{
+            background-color: rgb(4, 248, 195);
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(229, 212, 238);">
+    <h1>Some basic selectors in css</h1>
+    <ol>
+        <li><h3>tag selector </h3>- select every same tag once</li>
+        <li><h3>class selector </h3>- using ".class_name " "select same tag multiple times </li>
+        <li><h3>id selector </h3>- using " #id_name " select one tag only </li>
+        <li><h3>child selector </h3>- using " parent > child "  you can select any element inside a parent tag if it's avialble directly inside parent tag, not nasted or indirectly </li>
+        <li><h3>descendant selectors</h3> - using " parent child" you can select any element inside a parent tag if it's avialble directly or indirectly </li> 
+        <li><h3>universal selector</h3> -using "*" you can select every element on the page </li>
+        <li><h3>pseudo selector</h3> -using ":" pseudo selectors are used to select an element based on its state or position</li>
+    </ol>
+    <p>Hello i am paragraph, tag "p"</p>
+    <p>hello i am also paragraph, tag "p"</p>
+   
+    <button  class = "btn">submit</button>
+    <button>submit</button>
+    <button id="btn1">submit</button>
+ 
+    <div>
+        <br>Hello i am a parent tag "div"
+        <p>Hello i am a child tag "p"</p>
+    </div>
+    <div>
+        <br>Hello i am a grandparent tag "div"
+        <article>
+            i am a parent tag "article"
+            <h3>Hello i am a child tag "h3"</h3>
+        </article>
+        
+    </div>
+    <a href="https://www.google.com">open google</a><br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A libero corporis quos debitis sint? Sit aspernatur ad similique reiciendis architecto exercitationem eveniet, et vero iure nobis id impedit. Fugiat, molestiae.</p>
+</body>
+</html>

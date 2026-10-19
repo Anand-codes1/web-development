@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to merge css in html file</title>
+</head>
+<style>
+    /* second internal css */
+     h2{
+        color: blue;
+     }
+</style>
+<!-- third external css -->
+<link rel="stylesheet" href="01_style.css">
+<body style="background-color: cornsilk;">
+    <h1>Merge css in html</h1>
+    <h3>!! There are three way to merge css in html</h3>
+    <ol>
+        <li><h4>Inline css</h4> Inline css means add css on html element and it's work on particular element only</li>
+        <li><h4>Internal css</h4> Internal css means add css on html file using style tag inside head tag and it's work on complete html page or element of page </li>
+        <li><h4>External css</h4>External css means add css on html file using link tag inside head tag and it's also work on complete html page or element of page </li>
+    </ol>
+    <h2>Like this </h2>
+    <!-- first inline css -->
+     <h3 style ="color: rgb(248, 143, 5);">hello my self anand , " h3 heading tag , using inline css"</h3>
+     <h2>hello my self anand , " h2 heading tag ,  " </h2>
+     <h2>and i am b.tech cse student , " h2 heading tag ,  "</h2>
+     <p>again hello my self anand , using external css</p>
+
+</body>
+</html>
